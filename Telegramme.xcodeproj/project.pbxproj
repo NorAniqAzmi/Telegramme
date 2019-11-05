@@ -13,6 +13,10 @@
 		BFE27DDF237165A8009A1A47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFE27DDD237165A8009A1A47 /* Main.storyboard */; };
 		BFE27DE1237165AB009A1A47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFE27DE0237165AB009A1A47 /* Assets.xcassets */; };
 		BFE27DE4237165AB009A1A47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFE27DE2237165AB009A1A47 /* LaunchScreen.storyboard */; };
+		BFE27DEC2371677C009A1A47 /* Content.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFE27DEB2371677C009A1A47 /* Content.storyboard */; };
+		BFE27DEE23716B14009A1A47 /* AddContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE27DED23716B14009A1A47 /* AddContactViewController.swift */; };
+		BFE27DF023716FDD009A1A47 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE27DEF23716FDD009A1A47 /* Contact.swift */; };
+		BFE27DF2237175E9009A1A47 /* ShowContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE27DF1237175E9009A1A47 /* ShowContactViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		BFE27DE0237165AB009A1A47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFE27DE3237165AB009A1A47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BFE27DE5237165AB009A1A47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFE27DEB2371677C009A1A47 /* Content.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Content.storyboard; sourceTree = "<group>"; };
+		BFE27DED23716B14009A1A47 /* AddContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactViewController.swift; sourceTree = "<group>"; };
+		BFE27DEF23716FDD009A1A47 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		BFE27DF1237175E9009A1A47 /* ShowContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowContactViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,10 @@
 				BFE27DD9237165A8009A1A47 /* SceneDelegate.swift */,
 				BFE27DDB237165A8009A1A47 /* ViewController.swift */,
 				BFE27DDD237165A8009A1A47 /* Main.storyboard */,
+				BFE27DEB2371677C009A1A47 /* Content.storyboard */,
+				BFE27DEF23716FDD009A1A47 /* Contact.swift */,
+				BFE27DED23716B14009A1A47 /* AddContactViewController.swift */,
+				BFE27DF1237175E9009A1A47 /* ShowContactViewController.swift */,
 				BFE27DE0237165AB009A1A47 /* Assets.xcassets */,
 				BFE27DE2237165AB009A1A47 /* LaunchScreen.storyboard */,
 				BFE27DE5237165AB009A1A47 /* Info.plist */,
@@ -125,6 +137,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFE27DEC2371677C009A1A47 /* Content.storyboard in Resources */,
 				BFE27DE4237165AB009A1A47 /* LaunchScreen.storyboard in Resources */,
 				BFE27DE1237165AB009A1A47 /* Assets.xcassets in Resources */,
 				BFE27DDF237165A8009A1A47 /* Main.storyboard in Resources */,
@@ -139,7 +152,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFE27DDC237165A8009A1A47 /* ViewController.swift in Sources */,
+				BFE27DEE23716B14009A1A47 /* AddContactViewController.swift in Sources */,
+				BFE27DF023716FDD009A1A47 /* Contact.swift in Sources */,
 				BFE27DD8237165A8009A1A47 /* AppDelegate.swift in Sources */,
+				BFE27DF2237175E9009A1A47 /* ShowContactViewController.swift in Sources */,
 				BFE27DDA237165A8009A1A47 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
