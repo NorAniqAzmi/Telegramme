@@ -13,6 +13,7 @@ class ShowContactViewController : UITableViewController{
     var appDelegate = UIApplication.shared.delegate as! AppDelegate
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.rightBarButtonItem = self.editButtonItem
         
         self.tableView.reloadData() //refresh data
     }
@@ -35,4 +36,36 @@ class ShowContactViewController : UITableViewController{
         return cell
         
     }
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath)
+        -> Bool {
+            if indexPath.section == 0{
+                return false
+            }
+            else {
+                return true
+            }
+        
+    }
+    override func tableView(_ tableView: UITableView, commit editingStyle:
+        UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        
+        if editingStyle == UITableViewCell.EditingStyle.delete {
+        appDelegate.contactList.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: UITableView.RowAnimation.fade)
+            
+        
+        
+        }
+        
+        
+    
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        AppDelegate.temp = Int(indexPath.row)
+    }
+    
+    
 }
+
+

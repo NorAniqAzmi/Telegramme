@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BFC3D84423827D2200C741E4 /* UpdateContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC3D84323827D2200C741E4 /* UpdateContactViewController.swift */; };
 		BFE27DD8237165A8009A1A47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE27DD7237165A8009A1A47 /* AppDelegate.swift */; };
 		BFE27DDA237165A8009A1A47 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE27DD9237165A8009A1A47 /* SceneDelegate.swift */; };
 		BFE27DDC237165A8009A1A47 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE27DDB237165A8009A1A47 /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BFC3D84323827D2200C741E4 /* UpdateContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateContactViewController.swift; sourceTree = "<group>"; };
 		BFE27DD4237165A8009A1A47 /* Telegramme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Telegramme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE27DD7237165A8009A1A47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFE27DD9237165A8009A1A47 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				BFE27DE0237165AB009A1A47 /* Assets.xcassets */,
 				BFE27DE2237165AB009A1A47 /* LaunchScreen.storyboard */,
 				BFE27DE5237165AB009A1A47 /* Info.plist */,
+				BFC3D84323827D2200C741E4 /* UpdateContactViewController.swift */,
 			);
 			path = Telegramme;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 				BFE27DD8237165A8009A1A47 /* AppDelegate.swift in Sources */,
 				BFE27DF2237175E9009A1A47 /* ShowContactViewController.swift in Sources */,
 				BFE27DDA237165A8009A1A47 /* SceneDelegate.swift in Sources */,
+				BFC3D84423827D2200C741E4 /* UpdateContactViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
