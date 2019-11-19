@@ -22,6 +22,18 @@ class ShowContactViewController : UITableViewController{
         self.tableView.reloadData()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "editContactSegue"
+        {
+            let index = self.tableView.indexPathForSelectedRow
+            (segue.destination as! UpdateContactViewController).firstNameUpdate = appDelegate.contactList[index!.row].firstName
+            (segue.destination as! UpdateContactViewController).lastNameUpdate = appDelegate.contactList[index!.row].lastName
+            (segue.destination as! UpdateContactViewController).mobileUpdate = appDelegate.contactList[index!.row].mobileNo
+            (segue.destination as! UpdateContactViewController).index = index!.row
+            print(" Heelo this numberrerdasvbhjvfyv ")
+        }
+    }
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -36,16 +48,16 @@ class ShowContactViewController : UITableViewController{
         return cell
         
     }
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath)
-        -> Bool {
-            if indexPath.section == 0{
-                return false
-            }
-            else {
-                return true
-            }
-        
-    }
+//    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath)
+//        -> Bool {
+//            if indexPath.section == 0{
+//                return false
+//            }
+//            else {
+//                return true
+//            }
+//
+//    }
     override func tableView(_ tableView: UITableView, commit editingStyle:
         UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         
@@ -63,6 +75,8 @@ class ShowContactViewController : UITableViewController{
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         AppDelegate.temp = Int(indexPath.row)
+        
+        
     }
     
     
